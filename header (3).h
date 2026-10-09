@@ -1,0 +1,17 @@
+extern void lcd_data(unsigned char data);
+extern void lcd_init(void);
+extern void lcd_cmd(unsigned char cmd);
+ extern void delay_sec(unsigned int sec);
+extern void delay_ms(unsigned int ms);
+ void uart0_init(unsigned int boud);
+ void uart0_tx(unsigned char data);
+ unsigned char uart0_rx(void);
+typedef unsigned int u32;
+typedef  int s32;
+typedef unsigned char u8;
+typedef char  s8;
+extern void adc_init(void);
+extern u32 adc_read(u8);
+void uart0_string(unsigned char *p);
+void uart_interger(int num);
+void lcd_string( char *p);
